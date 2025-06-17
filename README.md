@@ -174,10 +174,36 @@ Enables guests to search for available properties and make bookings for specifie
 
 4. Review and Rating System
 Lets guests leave reviews and star ratings for properties they've booked. Helps future users make informed decisions based on past guest experiences.
+🔐 API Security
+Security is a critical aspect of this project to ensure user privacy, data integrity, and safe financial transactions. Below are the main security measures implemented:
 
-5. Payment Integration
+1. Authentication
+What: Use of secure methods such as JWT (JSON Web Tokens) or OAuth2 to verify user identity.
+Why: Ensures only registered users can access protected resources like bookings, property listings, or user profiles.
+
+2. Authorization
+What: Role-based access control (RBAC) to define what actions a user can perform (e.g., guest vs. host vs. admin).
+Why: Prevents users from accessing or modifying data they do not own or have rights to (e.g., one host editing another's listing).
+
+3. Input Validation and Sanitization
+What: Server-side validation to check and clean all incoming data.
+Why: Prevents injection attacks (e.g., SQL injection, XSS) and maintains data integrity.
+
+4. Rate Limiting
+What: Throttling the number of requests a user or IP can make over a given time.
+Why: Protects the API from brute-force attacks and abuse (e.g., login attempts, denial-of-service).
+
+5. HTTPS and Secure Cookies
+What: Enforcing HTTPS for all API requests and using secure, HTTP-only cookies for session management.
+Why: Protects data in transit from being intercepted or tampered with.
+
+6. Payment Security
+What: Integration with PCI-compliant payment gateways (e.g., Stripe or PayPal) for handling transactions.
+Why: Ensures that sensitive financial information is processed securely and never stored on our servers.
+
+6. Payment Integration
 Handles secure payment processing for confirmed bookings. Ensures financial transactions are recorded, and users receive payment status updates.
 
-6. Admin Dashboard (if applicable)
+7. Admin Dashboard (if applicable)
 Provides administrative users with tools to manage users, properties, and platform-wide data. Supports content moderation, analytics, and system monitoring.
 
