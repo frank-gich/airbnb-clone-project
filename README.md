@@ -174,6 +174,7 @@ Enables guests to search for available properties and make bookings for specifie
 
 4. Review and Rating System
 Lets guests leave reviews and star ratings for properties they've booked. Helps future users make informed decisions based on past guest experiences.
+
 🔐 API Security
 Security is a critical aspect of this project to ensure user privacy, data integrity, and safe financial transactions. Below are the main security measures implemented:
 
@@ -206,4 +207,35 @@ Handles secure payment processing for confirmed bookings. Ensures financial tran
 
 7. Admin Dashboard (if applicable)
 Provides administrative users with tools to manage users, properties, and platform-wide data. Supports content moderation, analytics, and system monitoring.
+
+🚀 CI/CD Pipeline
+CI/CD stands for Continuous Integration and Continuous Deployment/Delivery. It is a development practice that enables teams to automate the process of testing, building, and deploying applications.
+
+Why CI/CD is Important
+✅ Improved Code Quality: Automated tests ensure code changes don’t introduce bugs.
+
+🚀 Faster Releases: Streamlined deployment process allows for quicker updates and feature rollouts.
+
+🛡️ Consistent Environments: Docker and containerization help eliminate environment mismatch issues.
+
+🔁 Continuous Feedback: Developers are alerted of integration issues early in the development cycle.
+
+Tools Used
+GitHub Actions: Automates workflows like testing, linting, and deployment when code is pushed to the repository.
+
+Docker: Containers ensure consistency across development, staging, and production environments.
+
+Docker Compose (optional): Manages multi-container applications (e.g., app + database).
+
+Heroku / AWS / Render (optional): For automated deployment of the application after a successful CI run.
+
+Pipeline Stages
+Code Push → Triggers CI workflow.
+
+Linting & Tests → Ensures code quality and correctness.
+
+Build → Creates a Docker image of the application.
+
+Deploy → Pushes the image to a cloud platform or runs the app in a live environment.
+
 
