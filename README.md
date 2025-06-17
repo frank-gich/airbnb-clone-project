@@ -161,3 +161,23 @@ Entity Relationships Summary
 🏠 Property → has many → ✍️ Reviews
 
 📅 Booking → has one → 💳 Payment
+
+✨ Feature Breakdown
+1. User Management
+Provides secure authentication and user role handling (e.g., guest, host, admin). Enables users to register, log in, manage profiles, and access role-based features.
+
+2. Property Management
+Allows hosts to list, edit, and delete properties. Each property can include detailed descriptions, images, pricing, and availability to attract potential guests.
+
+3. Booking System
+Enables guests to search for available properties and make bookings for specified dates. Prevents booking conflicts and manages booking statuses such as confirmed, pending, or cancelled.
+
+4. Review and Rating System
+Lets guests leave reviews and star ratings for properties they've booked. Helps future users make informed decisions based on past guest experiences.
+
+5. Payment Integration
+Handles secure payment processing for confirmed bookings. Ensures financial transactions are recorded, and users receive payment status updates.
+
+6. Admin Dashboard (if applicable)
+Provides administrative users with tools to manage users, properties, and platform-wide data. Supports content moderation, analytics, and system monitoring.
+
